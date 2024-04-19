@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Anatolii Zubkov
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\setlength{\footskip}{4.08003pt}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoIntro}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Anatolii Zubkov}} & Email : \href{mailto:xxxx@domain.name}{xxxx@domain.name}\\
+   {Software Engineer}& Mobile : \href{tel:+49 xxx xxxxxxxx}{+49 xxx xxxxxxxx} \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {EPAM Systems}{Berlin, Germany}
+      {Lead Software Engineer}{Jun 2018 - Present}
+      \resumeItemListStart
+        \resumeItemNoIntro
+          {Architected and engineered custom innovative enterprise software solutions for Fortune 500 clients tailored to diverse customer needs, driving a 25\% increase in user retention rates and enhancing overall customer satisfaction scores by 230 points, boosting operational efficiency by around 30\% and increasing revenue by an average of \$500K annually through streamlined processes and advanced automation technologies.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Virgin Red}{Remote, UK}
+      {Front End Engineer}{Apr 2023 - Mar 2024}
+      \resumeItemListStart
+        \resumeItemNoIntro
+          {Successfully integrated three external marketing tools from third-party providers, enhancing the functionality of the mobile application.}
+        \resumeItemNoIntro
+          {Facilitated the seamless deployment of the application to over 1 million users on both the App Store and Google Play Store.}
+        \resumeItem{Technologies}
+          {React 18, React Native, TypeScript, AWS}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {adidas}{Herzogenaurach, Germany}
+      {Lead Software Engineer}{Apr 2021 - Mar 2023}
+      \resumeItemListStart
+        \resumeItemNoIntro
+          {Strategically planned and implemented a robust Solution Architecture, resulting in a 45\% improvement in system efficiency.}
+        \resumeItemNoIntro
+          {Effectively scaled a software engineering team from a single member to a cohesive unit of five high-performing engineers.}
+        \resumeItem{Technologies}
+          {Microfrontends, React 17, RxJS, TypeScript, Webpack 5, Module Federation, AWS}
+      \resumeItemListEnd      
+
+    \resumeSubheading
+      {Clarivate Analytics}{Remote, USA}
+      {Lead Software Engineer}{Jun 2018 - Mar 2021}
+      \resumeItemListStart
+        \resumeItemNoIntro
+          {Participated in Solution Architecture planning and implementation from 0 to 1 and contributed to company architecture guidelines.}
+        \resumeItemNoIntro
+          {Assembled and managed a high-performing team of 9 Frontend Software Engineers.}
+        \resumeItemNoIntro
+          {Implemented a variety of new features for the application, including interactive charts, export capabilities to PNG, PDF, and XLS, role-based authorization, and more.}
+        \resumeItem{Technologies}
+          {Angular 10, TypeScript, RxJS, D3, Spring MVC, PostgreSQL, AWS}
+      \resumeItemListEnd          
+
+    \resumeSubheading
+      {Netsertive}{Remote, USA}
+      {Senior Software Engineer}{Oct 2016 - May 2018}
+      \resumeItemListStart
+        \resumeItem{Technologies}
+          {React 15, Redux, Flow, PHP 5, CodeIgniter, Liquibase, MySQL}
+      \resumeItemListEnd   
+
+    \resumeSubheading
+      {Xyleme}{Remote, USA}
+      {Senior Software Engineer}{Apr 2015 - Sep 2016}
+      \resumeItemListStart
+        \resumeItem{Technologies}
+          {JavaScript, ECMAScript 6, Groovy, Grails, Gradle, MongoDB}
+      \resumeItemListEnd   
+
+    \resumeSubheading
+      {Knowit AB / Datium Oy}{Helsinki, Finland}
+      {Senior Software Engineer}{Sep 2012 - Mar 2015}
+      \resumeItemListStart
+        \resumeItem{Technologies}
+          {.NET, SharePoint, JavaScript, HTML5/CSS3, SQL}
+      \resumeItemListEnd   
+
+    \resumeSubheading
+      {Softline}{Moscow, Russian Federation}
+      {Senior Software Engineer}{Jan 2008 - Aug 2012}
+      \resumeItemListStart
+        \resumeItem{Technologies}
+          {.NET, SharePoint, JavaScript, HTML5/CSS3, SQL}
+      \resumeItemListEnd         
+
+    \resumeSubheading
+      {Ramedia}{Kostroma, Russian Federation}
+      {Software Engineer}{Aug 2005 - Dec 2007}
+      \resumeItemListStart
+        \resumeItem{Technologies}
+          {.NET, JavaScript, XML/XSLT, HTML/CSS, SQL}
+      \resumeItemListEnd    
+
+    \resumeSubheading
+      {Kostroma State Technological University (KSTU)}{Kostroma, Russian Federation}
+      {Software Engineer}{Sep 2004 - Aug 2005}
+      \resumeItemListStart
+        \resumeItem{Technologies}
+          {PHP 4, JavaScript, HTML/CSS, MySQL}
+      \resumeItemListEnd        
+      
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kostroma State Technological University (KSTU)}{Kostroma, Russian Federation}
+      {Master of Science in Information Systems and Technologies;  Diploma cum laude}{}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=*, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, JavaScript, Dart, C\#, SQL, HTML/CSS, PHP, Python, Swift, Kotlin} \\
+     \textbf{Frameworks}{: React, React Native, Flutter, Ionic, Capacitor, Angular, Vue, Flutter, Node.js} \\
+     \textbf{Developer Tools}{: Git, Docker, AWS, Azure, Kubernetes, Google Cloud Platform, VS Code} \\
+     \textbf{Libraries}{: Webpack Module Federation, RxJS, D3}
+    }}
+ \end{itemize}
+
+\end{document}
